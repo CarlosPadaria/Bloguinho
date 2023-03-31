@@ -5,6 +5,7 @@
 html, body{
     margin: 0;
     padding: 0;
+    font-size: 16px;
     font-family: 'Source Sans Pro', sans-serif;
 }
 /* TIPOGRAFIA */
@@ -27,6 +28,13 @@ p{
 h2{
     font-size: 1.25em;
 }
+h1{
+    font-size: 2.5rem;
+    letter-spacing: 1.5;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 /* RESTO */
 header{
     display: flex;
@@ -35,12 +43,6 @@ header{
     align-items: center;
     padding: 1rem 2rem;
     background-color: #ffffff;
-    box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
-   
-
-}
-main{
-    max-width: 100%;
 }
 .logo{
     color: #0E0E0E;
@@ -54,6 +56,7 @@ main{
     width: 20%;
     flex-wrap: wrap;
     margin-right: 2rem;
+
 }
 .nav{
     width: 80%;
@@ -90,14 +93,38 @@ li > a:hover{
     transition: 0.25s;
 }
 
-main{
-    background-color: #FAFAFA;
+
+.main-image{
+   width: 100%;
+   height: 85vh;
+   object-fit: cover;
+
+}
+.wrapper-main-image{
+    width: 100%;
+    position:relative;
 }
 
-.aboutme-image{
-    width: 100%;
-    border-radius: 100%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.text-image{
+    color: white;
+    position:absolute;
+    bottom: 0;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom:3rem;
+    left: 0;
+    text-shadow: 1px 1px 2px black;
+}
+
+.text-image > p{
+    font-weight: 400;
+    font-size: 1rem;
+    
+}
+
+.main-image-paragraph{
+    width: 80%;
+  
 }
 
 .container{
@@ -172,7 +199,93 @@ h1{
     margin-bottom: 2rem;
 }
 
+@media(min-width: 768px) and (max-width:1024px){
+    h1{
+        font-size: 3.5rem;
+    }
+    .main-image{
+        max-height: 80vh;
+    }
+
+    .text-image p{
+        font-size: 1.75rem;
+    }
+    .item-page{
+        flex-basis:  576px;
+    }
+    .item-page h2{
+        font-size: 3rem;
+    }
+    .item-page p{
+        font-size: 2rem;
+    }
+    .see-more{
+        font-size: 2rem;
+    }
+    header h3{
+        font-size: 2.5rem;
+    }
+    header a{
+        font-size: 2rem;
+    }
+    .text-image{
+
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        right: 0;
+        width: 90%;
+        margin: 2 2rem;
+
+        height: 5rem;
+    }
+    
+}
+
 @media(max-width: 768px){
+    .logo{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0;
+        padding-right: 0;
+    }
+    a{
+        padding: 0;
+        margin: 0;
+    }
+    li{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        text-align: center;
+        margin: 0;
+        padding: 1rem;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+    .nav ul{
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
     .container{
         margin: 0;
         padding: 0;
@@ -205,7 +318,27 @@ h1{
     article{
         width: 90%;
     }
+    .see-more{
+        font-size: 2rem;
+    }
+    .text-image{
 
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        right: 0;
+        width: 90%;
+        margin: 0 2rem;
+
+        height: 5rem;
+    }
+    
+}
+
+.see-more{
+    margin-top: 1rem;
+    font-weight: 700;
+    color: black;
 }
 
 .item-page{
@@ -218,5 +351,4 @@ h1{
 .item-page:hover h2{
     text-decoration: underline;
 }
-
 
