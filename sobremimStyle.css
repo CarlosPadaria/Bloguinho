@@ -51,13 +51,16 @@ main{
     justify-content: left;
     transition: 0.25s;
     cursor:pointer;
-    width: 10%;
+    width: 20%;
     flex-wrap: wrap;
 }
 .nav{
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: flex-end;
+}
+.logo h3{
+    white-space: nowrap;
 }
 ul{
     display: flex;
@@ -183,6 +186,8 @@ h1{
     }
     .aboutme-section{
         max-width: 100%;
+        justify-content: center;
+        align-items: center;
     }
     .aboutme-text{
         width: 100%;
