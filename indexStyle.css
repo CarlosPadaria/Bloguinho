@@ -7,6 +7,7 @@ html, body{
     padding: 0;
     font-size: 16px;
     font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden;
 }
 /* TIPOGRAFIA */
 h3{
@@ -96,12 +97,13 @@ li > a:hover{
 
 .main-image{
    width: 100%;
+   margin: 0;
+   padding: 0;
    height: 85vh;
    object-fit: cover;
 
 }
 .wrapper-main-image{
-    width: 100%;
     position:relative;
 }
 
@@ -109,6 +111,7 @@ li > a:hover{
     color: white;
     position:absolute;
     bottom: 0;
+    padding: 1rem;
     margin-left: 4rem;
     margin-right: 4rem;
     margin-bottom:3rem;
@@ -180,18 +183,20 @@ h1{
 
     max-width: 90%;
     display: grid;
-    gap: 10px;
+    gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
     list-style: none;
     padding: 0;
-  
+    justify-content: center;
    
 }
 
 .item-page{
+    margin: 1rem;
    /* flex-basis:  33%;
     flex-shrink: 1;
     flex-grow: 1;*/
+   
 }
 
 .recent-posts{
@@ -297,7 +302,7 @@ h1{
         justify-content: center;
         align-items: center;
         text-align: left;
-        max-width: 90%;
+        max-width: 100%;
     }
     main{
         width: 100%;
@@ -320,7 +325,7 @@ h1{
     }
 
     article{
-        width: 90%;
+        width: 100%;
     }
     .see-more{
         font-size: 2rem;
@@ -332,7 +337,7 @@ h1{
         left: 0;
         right: 0;
         width: 90%;
-        margin: 0 2rem;
+        margin: 0 0rem;
 
         height: 5rem;
     }
