@@ -123,6 +123,7 @@ main {
 
 section{
     margin-top: 2rem;
+    max-width: 1920px;
 }
 
 .post-data{
