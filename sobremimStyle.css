@@ -54,6 +54,7 @@ main{
     width: 20%;
     flex-wrap: wrap;
     margin-right: 2rem;
+    text-decoration: none;
 }
 .nav{
     width: 80%;
@@ -231,6 +232,9 @@ h1{
     }
     main{
         width: 100%;
+    }
+    section{
+        max-width: 1920px;
     }
     .aboutme-section{
         max-width: 100%;
